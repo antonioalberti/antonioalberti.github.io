@@ -707,6 +707,67 @@ a {
   }
 }
 
+// Timeline styles
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: $accent;
+  }
+  
+  .timeline-item {
+    display: flex;
+    margin-bottom: $f4;
+    position: relative;
+    
+    .timeline-year {
+      width: 100px;
+      text-align: right;
+      padding-right: $f4;
+      font-weight: 600;
+      color: $accent;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+    
+    .timeline-content {
+      padding-left: $f4;
+      flex: 1;
+      
+      h4 {
+        margin-bottom: $f1;
+        color: $primary;
+      }
+      
+      p {
+        color: $text-light;
+        margin-bottom: 0;
+        font-size: 0.95rem;
+      }
+    }
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 114px;
+      top: 8px;
+      width: 15px;
+      height: 15px;
+      background: $accent;
+      border-radius: 50%;
+      border: 3px solid $bg;
+    }
+  }
+}
+
 // Utilities
 .text-center { text-align: center; }
 .mt-0 { margin-top: 0; }

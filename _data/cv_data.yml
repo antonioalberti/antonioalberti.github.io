@@ -1,0 +1,86 @@
+# Dados extraídos do CV LaTeX para uso no site
+# Em três idiomas: EN, PT, ES
+
+employment_previous:
+  en:
+    - role: "Full Professor of Computer Engineering"
+      institution: "National Institute of Telecommunications (Inatel), Brazil"
+      period: "2012 – 2024"
+    - role: "Associate Professor of Telecommunications Engineering"
+      institution: "National Institute of Telecommunications (Inatel), Brazil"
+      period: "2008 – 2012"
+    - role: "Assistant Professor"
+      institution: "National Institute of Telecommunications (Inatel), Brazil"
+      period: "2003 – 2008"
+    - role: "Visiting Researcher"
+      institution: "ETRI - Electronics and Telecommunications Research Institute, South Korea"
+      period: "2006 – 2007"
+  pt:
+    - role: "Professor Titular de Engenharia de Computação"
+      institution: "Instituto Nacional de Telecomunicações (Inatel), Brasil"
+      period: "2012 – 2024"
+    - role: "Professor Associado de Engenharia de Telecomunicações"
+      institution: "Instituto Nacional de Telecomunicações (Inatel), Brasil"
+      period: "2008 – 2012"
+    - role: "Professor Assistente"
+      institution: "Instituto Nacional de Telecomunicações (Inatel), Brasil"
+      period: "2003 – 2008"
+    - role: "Pesquisador Visitante"
+      institution: "ETRI - Electronics and Telecommunications Research Institute, Coreia do Sul"
+      period: "2006 – 2007"
+  es:
+    - role: "Profesor Titular de Ingeniería de Computación"
+      institution: "Instituto Nacional de Telecomunicaciones (Inatel), Brasil"
+      period: "2012 – 2024"
+    - role: "Profesor Asociado de Ingeniería de Telecomunicaciones"
+      institution: "Instituto Nacional de Telecomunicaciones (Inatel), Brasil"
+      period: "2008 – 2012"
+    - role: "Profesor Asistente"
+      institution: "Instituto Nacional de Telecomunicaciones (Inatel), Brasil"
+      period: "2003 – 2008"
+    - role: "Investigador Visitante"
+      institution: "ETRI - Electronics and Telecommunications Research Institute, Corea del Sur"
+      period: "2006 – 2007"
+
+languages:
+  en:
+    - language: "Portuguese"
+      level: "Native"
+    - language: "English"
+      level: "Professional proficiency (working in UK academia)"
+    - language: "Spanish"
+      level: "Professional reading and comprehension"
+  pt:
+    - language: "Português"
+      level: "Nativo"
+    - language: "Inglês"
+      level: "Proficiência profissional (atuando na academia do Reino Unido)"
+    - language: "Espanhol"
+      level: "Leitura e compreensão profissional"
+  es:
+    - language: "Portugués"
+      level: "Nativo"
+    - language: "Inglés"
+      level: "Competencia profesional (trabajando en academia del Reino Unido)"
+    - language: "Español"
+      level: "Lectura y comprensión profesional"
+
+services:
+  en:
+    title: "Academic Service & Editorial Activities"
+    items:
+      - "Peer reviewer for high-impact journals in telecommunications and computer science"
+      - "Program committee member for international conferences on 5G/6G, IoT, and future Internet"
+      - "Reviewer for research funding agencies"
+  pt:
+    title: "Serviço Acadêmico & Atividades Editoriais"
+    items:
+      - "Revisor de periódicos de alto impacto em telecomunicações e ciência da computação"
+      - "Membro de comitê de programa de conferências internacionais sobre 5G/6G, IoT e Internet do Futuro"
+      - "Revisor de agências de financiamento de pesquisa"
+  es:
+    title: "Servicio Académico & Actividades Editoriales"
+    items:
+      - "Revisor de revistas de alto impacto en telecomunicaciones y ciencias de la computación"
+      - "Miembro de comité de programa de conferencias internacionales sobre 5G/6G, IoT e Internet del Futuro"
+      - "Revisor de agencias de financiación de investigación"
