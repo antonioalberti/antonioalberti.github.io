@@ -1,0 +1,79 @@
+# Site settings
+title: "Dr. Antonio Alberti"
+subtitle: "Associate Professor in Software Engineering"
+description: "Associate Professor at University of Leeds. Research in ICT architectures, 5G/6G, IoT, AI/ML, distributed systems, and digital transformation."
+keywords: "software engineering, 5G, 6G, IoT, AI, distributed systems, digital transformation, University of Leeds"
+author: "Dr. Antonio Alberti"
+email: "A.M.Alberti@leeds.ac.uk"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://antonioalberti.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name/
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - scripts/
+  - logs/
+
+# Social links
+social:
+  linkedin: "antonio-marcos-alberti-31643a1b"
+  google_scholar: "2L_IXAIAAAAJ"
+  researchgate: "Antonio-Alberti-2"
+  orcid: "0000-0002-0947-8575"
+  github: "antonioalberti"
+  twitter: ""
+
+# University affiliation
+university:
+  name: "University of Leeds"
+  school: "School of Computer Science"
+  url: "https://eps.leeds.ac.uk/computing"
+  profile_url: "https://eps.leeds.ac.uk/computing/staff/15735/dr-antonio-alberti"
+
+# Languages
+languages: ["en", "pt", "es"]
+default_lang: "en"

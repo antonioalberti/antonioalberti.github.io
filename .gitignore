@@ -1,0 +1,29 @@
+# Ignore generated site
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Logs
+logs/
+
+# Ruby/bundler
+vendor/
+.bundle/
+Gemfile.lock
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Temp files
+*.tmp
+*.swp
+*~
