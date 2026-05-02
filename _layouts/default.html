@@ -28,15 +28,16 @@
         <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
       </div>
       <nav class="site-nav">
-        <a href="#about">{{ t.nav.about }}</a>
-        <a href="#research">{{ t.nav.research }}</a>
-        <a href="#collaborations">{{ t.nav.collaborations }}</a>
-        <a href="#contact">{{ t.nav.contact }}</a>
+        <a href="#about">{% if page.lang == 'pt' %}Sobre{% elsif page.lang == 'es' %}Sobre Mí{% else %}About{% endif %}</a>
+        <a href="#experience">{% if page.lang == 'pt' %}Experiência{% elsif page.lang == 'es' %}Experiencia{% else %}Experience{% endif %}</a>
+        <a href="#research">{% if page.lang == 'pt' %}Pesquisa{% elsif page.lang == 'es' %}Investigación{% else %}Research{% endif %}</a>
+        <a href="#collaborations">{% if page.lang == 'pt' %}Colaborações{% elsif page.lang == 'es' %}Colaboraciones{% else %}Collaborations{% endif %}</a>
+        <a href="#contact">{% if page.lang == 'pt' %}Contato{% elsif page.lang == 'es' %}Contacto{% else %}Contact{% endif %}</a>
         
         <div class="lang-switcher">
-          <a href="{{ '/' | relative_url }}" class="{% if page.lang == 'en' %}active{% endif %}">EN</a>
-          <a href="{{ '/pt/' | relative_url }}" class="{% if page.lang == 'pt' %}active{% endif %}">PT</a>
-          <a href="{{ '/es/' | relative_url }}" class="{% if page.lang == 'es' %}active{% endif %}">ES</a>
+          <a href="{{ '/' | relative_url }}" {% if page.lang == 'en' %}class="active"{% endif %}>EN</a>
+          <a href="{{ '/pt/' | relative_url }}" {% if page.lang == 'pt' %}class="active"{% endif %}>PT</a>
+          <a href="{{ '/es/' | relative_url }}" {% if page.lang == 'es' %}class="active"{% endif %}>ES</a>
         </div>
       </nav>
     </div>
