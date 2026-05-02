@@ -189,7 +189,7 @@ a {
 .hero {
   background: linear-gradient(135deg, $primary 0%, $secondary 100%);
   color: white;
-  padding: $f7 0 $f6;
+  padding: $f7 0 0;
   margin-top: $f6;
   position: relative;
   overflow: hidden;
@@ -211,6 +211,19 @@ a {
     position: relative;
     z-index: 1;
     
+    .hero-badge {
+      display: inline-block;
+      background: $accent;
+      color: $primary;
+      padding: $f1 $f3;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-bottom: $f3;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
     .hero-title {
       font-size: $f6;
       color: white;
@@ -221,7 +234,7 @@ a {
     .hero-subtitle {
       font-size: $f4;
       color: rgba(255,255,255,0.9);
-      margin-bottom: $f3;
+      margin-bottom: $f2;
       font-weight: 400;
     }
     
@@ -262,6 +275,39 @@ a {
           }
         }
       }
+    }
+  }
+}
+
+// Stats bar
+.stats-bar {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: $f4 0;
+  margin-top: $f5;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.stats-grid {
+  @include container;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $f3;
+  text-align: center;
+  
+  .stat-item {
+    h3 {
+      font-size: $f4;
+      color: $accent;
+      margin-bottom: $f1;
+    }
+    
+    p {
+      color: rgba(255,255,255,0.8);
+      margin: 0;
+      font-size: 0.9rem;
     }
   }
 }
@@ -327,13 +373,63 @@ a {
       }
     }
     
-    ul {
-      margin-left: $f3;
+    .education-item {
       margin-bottom: $f3;
+      padding-left: $f3;
+      border-left: 3px solid $accent;
       
-      li {
-        margin-bottom: $f1;
+      strong {
+        color: $primary;
+        font-weight: 600;
       }
+      
+      em {
+        color: $text-light;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+// Awards section
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $f3;
+  
+  .award-card {
+    background: white;
+    padding: $f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 3px solid $accent;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+    
+    .award-year {
+      display: inline-block;
+      background: $accent;
+      color: white;
+      padding: $f1 $f2;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: $f2;
+    }
+    
+    h4 {
+      margin-bottom: $f2;
+      color: $primary;
+    }
+    
+    p {
+      color: $text-light;
+      margin-bottom: 0;
+      font-size: 0.95rem;
     }
   }
 }
@@ -369,6 +465,43 @@ a {
     p {
       color: $text-light;
       margin-bottom: 0;
+    }
+  }
+}
+
+// Skills section
+.skills-content {
+  max-width: 900px;
+  margin: 0 auto;
+  
+  .skill-category {
+    margin-bottom: $f4;
+    
+    h3 {
+      margin-bottom: $f3;
+      color: $primary;
+    }
+    
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $f2;
+    }
+    
+    .skill-tag {
+      background: white;
+      padding: $f2 $f3;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: $secondary;
+      border: 1px solid $border;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: $secondary;
+        color: white;
+        border-color: $secondary;
+      }
     }
   }
 }
@@ -548,12 +681,17 @@ a {
   }
   
   .research-grid,
-  .collab-grid {
+  .collab-grid,
+  .awards-grid {
     grid-template-columns: 1fr;
   }
   
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
   .hero {
-    padding: $f6 0 $f5;
+    padding: $f6 0 0;
     
     .hero-title {
       font-size: $f4;

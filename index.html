@@ -3,17 +3,36 @@ layout: default
 lang: en
 ---
 
-{% assign t = site.data.i18n[page.lang] %}
-
 <!-- Hero Section -->
 <section class="hero" id="top">
   <div class="hero-content">
-    <h1 class="hero-title">{{ t.hero.title }}</h1>
-    <p class="hero-subtitle">{{ t.hero.subtitle }}</p>
-    <p class="hero-affiliation">{{ t.hero.affiliation }}</p>
+    <span class="hero-badge">Associate Professor</span>
+    <h1 class="hero-title">Dr. Antonio Alberti</h1>
+    <p class="hero-subtitle">Software Engineering & Future Internet Architectures</p>
+    <p class="hero-affiliation">School of Computer Science, University of Leeds, UK</p>
     <div class="hero-cta">
-      <a href="#research" class="btn btn-primary">{{ t.hero.cta_research }}</a>
-      <a href="#contact" class="btn btn-secondary">{{ t.hero.cta_contact }}</a>
+      <a href="#research" class="btn btn-primary">Explore Research</a>
+      <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>100+</h3>
+        <p>Publications</p>
+      </div>
+      <div class="stat-item">
+        <h3>90+</h3>
+        <p>Keynotes</p>
+      </div>
+      <div class="stat-item">
+        <h3>20+</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-item">
+        <h3>8</h3>
+        <p>Awards</p>
+      </div>
     </div>
   </div>
 </section>
@@ -22,73 +41,148 @@ lang: en
 <section class="section" id="about">
   <div class="container">
     <div class="section-header">
-      <h2>{{ t.about.title }}</h2>
+      <h2>About Me</h2>
     </div>
     <div class="about-grid">
       <div class="about-image">
         <img src="https://eps.leeds.ac.uk/site/custom_scripts/image.php?w=400&h=400&crop=1&stretch=1&filename=15735.jpg&path=staffphotos/15735/" alt="Dr. Antonio Alberti">
       </div>
       <div class="about-content">
-        <h3>{{ t.about.bio_title }}</h3>
-        <p>I am an Associate Professor in Software Engineering at the School of Computer Science, University of Leeds, UK. I have over 20 years of experience at the National Institute of Telecommunications (Inatel), Brazil. I completed my PhD at the State University of Campinas (Unicamp), Brazil, and I was a visiting researcher at the Electronics and Telecommunications Research Institute (ETRI), South Korea.</p>
-        <p>I have leadership experience in coordinating research teams and securing research funding. I have published more than 100 peer-reviewed papers in high-impact journals and conferences and have delivered over 90 talks on technology and its disruptive impacts.</p>
-        <p>I served as the Chief Architect of the NovaGenesis Future Internet project (2008–2024) and have contributed to Future Internet initiatives in South Korea and the initial discussions of the Brazilian National M2M/IoT Plan. Additionally, I played a key role in designing the architecture of the Brazil 6G Project.</p>
+        <h3>Biography</h3>
+        <p>I am an Associate Professor in Software Engineering at the School of Computer Science, University of Leeds, UK. I have over 20 years of experience in telecommunications and computer engineering, with a research focus on next-generation information architectures, 5G/6G technologies, and future Internet alternatives.</p>
+        <p>My research explores design, softwarization, virtualization, self-organization, orchestration, and programmability of converging information and communication technologies. I am particularly involved in advanced network architectures, smart city development, and digital monetization approaches.</p>
+        <p>I served as the Chief Architect of the NovaGenesis Future Internet project (2008–2024) and contributed to the architecture of the Brazil 6G Project. I have also contributed to Future Internet initiatives in South Korea and participated in the initial discussions of the Brazilian National IoT Plan.</p>
+        <p>I am the author of "Novos Renascimentos," a book covering hundreds of technologies and their impacts on society. Since 2018, I have dedicated myself to futurism, helping institutions position themselves towards futures of human values supported by technology.</p>
         
-        <h3>{{ t.about.interests_title }}</h3>
-        <ul>
-          <li>5G/6G architectures and mobile communications</li>
-          <li>Internet of Things (IoT) and smart environments</li>
-          <li>Distributed systems and service-oriented architectures</li>
-          <li>Cloud/edge computing and federation</li>
-          <li>AI/ML integration in ICT systems</li>
-          <li>Blockchain and digital monetization</li>
-          <li>Digital twins and cyber-physical systems</li>
-          <li>Smart cities and Industry 5.0</li>
-        </ul>
-        
-        <h3>{{ t.about.qualifications_title }}</h3>
-        <ul>
-          <li>PhD in Computer Science - State University of Campinas (Unicamp), Brazil</li>
-          <li>MSc in Computer Science</li>
-          <li>BSc in Computer Engineering</li>
-        </ul>
+        <h3>Education</h3>
+        <div class="education-item">
+          <strong>Ph.D. in Electrical Engineering</strong> — State University of Campinas (Unicamp), Brazil<br>
+          <em>Telecommunications and Telematics</em> | 1998 – 2003
+        </div>
+        <div class="education-item">
+          <strong>M.Sc. in Electrical Engineering</strong> — State University of Campinas (Unicamp), Brazil<br>
+          <em>Electronics and Communications</em> | 1996 – 1998
+        </div>
+        <div class="education-item">
+          <strong>B.Sc. in Electrical Engineering</strong> — Federal University of Santa Maria, Brazil<br>
+          <em>1991 – 1996</em>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Awards Section -->
+<section class="section section-alt" id="awards">
+  <div class="container">
+    <div class="section-header">
+      <h2>Awards & Honors</h2>
+    </div>
+    <div class="awards-grid">
+      <div class="award-card">
+        <div class="award-year">2023</div>
+        <h4>Commendation of Merit</h4>
+        <p>ADINATEL — for significant services to education and innovation in Brazil</p>
+      </div>
+      <div class="award-card">
+        <div class="award-year">2021</div>
+        <h4>Best Paper Award</h4>
+        <p>SBCUP — Brazilian Symposium on Ubiquitous and Pervasive Computing</p>
+      </div>
+      <div class="award-card">
+        <div class="award-year">2021</div>
+        <h4>Best Paper Award</h4>
+        <p>WPEIF — Workshop on Experimental Internet Research</p>
+      </div>
+      <div class="award-card">
+        <div class="award-year">2021</div>
+        <h4>Honored Professor</h4>
+        <p>Telecommunications Engineering, Inatel</p>
+      </div>
+      <div class="award-card">
+        <div class="award-year">2020</div>
+        <h4>Best Paper Award</h4>
+        <p>WPEIF, SBC</p>
+      </div>
+      <div class="award-card">
+        <div class="award-year">2013</div>
+        <h4>Best Paper Award</h4>
+        <p>International Conference on CCCM, India</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Research Section -->
-<section class="section section-alt" id="research">
+<section class="section" id="research">
   <div class="container">
     <div class="section-header">
-      <h2>{{ t.research.title }}</h2>
-      <p>{{ t.research.description }}</p>
+      <h2>Research & Expertise</h2>
+      <p>Reimagining foundational structures of ICT for enhanced efficiency, flexibility, autonomicity, security, robustness, and adaptability.</p>
     </div>
     <div class="research-grid">
-      {% for area in t.research.areas %}
       <div class="research-card">
-        <div class="research-icon">
-          {% case area.title %}
-            {% when '5G/6G Architectures' or 'Arquiteturas 5G/6G' or 'Arquitecturas 5G/6G' %}
-              <i class="fas fa-broadcast-tower"></i>
-            {% when 'Internet of Things' or 'Internet das Coisas' or 'Internet de las Cosas' %}
-              <i class="fas fa-network-wired"></i>
-            {% when 'Distributed Systems' or 'Sistemas Distribuídos' or 'Sistemas Distribuidos' %}
-              <i class="fas fa-server"></i>
-            {% when 'AI/ML Integration' or 'Integração AI/ML' or 'Integración AI/ML' %}
-              <i class="fas fa-brain"></i>
-            {% when 'Blockchain & Digital Monetization' or 'Blockchain & Monetização Digital' or 'Blockchain & Monetización Digital' %}
-              <i class="fas fa-link"></i>
-            {% when 'Digital Transformation' or 'Transformação Digital' or 'Transformación Digital' %}
-              <i class="fas fa-city"></i>
-            {% else %}
-              <i class="fas fa-microchip"></i>
-          {% endcase %}
-        </div>
-        <h3>{{ area.title }}</h3>
-        <p>{{ area.description }}</p>
+        <div class="research-icon"><i class="fas fa-broadcast-tower"></i></div>
+        <h3>5G/6G Architectures</h3>
+        <p>Hybrid terrestrial-satellite architectures and disruptive 6G design, including open RAN, network slicing, and mmWave technologies.</p>
       </div>
-      {% endfor %}
+      <div class="research-card">
+        <div class="research-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>Internet of Things</h3>
+        <p>Smart environments, M2M/IoT platforms, digital twins, and cyber-physical systems integration.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-icon"><i class="fas fa-server"></i></div>
+        <h3>Distributed Systems</h3>
+        <p>Service-oriented architectures, cloud/edge computing, federation, and software-defined networking.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-icon"><i class="fas fa-brain"></i></div>
+        <h3>AI/ML Integration</h3>
+        <p>Machine learning for network optimization, intelligent systems, and autonomous network management.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-icon"><i class="fas fa-link"></i></div>
+        <h3>Blockchain & DLT</h3>
+        <p>Distributed ledger technology for secure transactions, digital monetization, and decentralized applications.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-icon"><i class="fas fa-city"></i></div>
+        <h3>Digital Transformation</h3>
+        <p>Smart cities, Industry 5.0, rural development, and technology-driven societal transformation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <h2>Skills & Expertise</h2>
+    </div>
+    <div class="skills-content">
+      <div class="skill-category">
+        <h3>Technical Areas</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Future Internet (5G, 6G, ICN, SDN, NFV)</span>
+          <span class="skill-tag">IoT & Smart Cities</span>
+          <span class="skill-tag">Cloud/Edge Computing</span>
+          <span class="skill-tag">Blockchain & DLT</span>
+          <span class="skill-tag">AI/ML for Networks</span>
+          <span class="skill-tag">Software Engineering</span>
+          <span class="skill-tag">Network Protocols</span>
+          <span class="skill-tag">Digital Twins</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Programming & Tools</h3>
+        <p>Advanced C++, C, Python | AI Tools: ChatGPT, Claude, Copilot, Midjourney | GitHub, Docker, Wireshark, MATLAB</p>
+      </div>
+      <div class="skill-category">
+        <h3>Teaching & Speaking</h3>
+        <p>20+ years teaching at undergraduate, master's and doctoral levels | 60+ keynotes on technological disruptions at major events</p>
+      </div>
     </div>
   </div>
 </section>
@@ -97,32 +191,26 @@ lang: en
 <section class="section" id="collaborations">
   <div class="container">
     <div class="section-header">
-      <h2>{{ t.collaborations.title }}</h2>
+      <h2>Collaborations & Opportunities</h2>
     </div>
     <div class="collab-grid">
       <div class="collab-card">
-        <div class="collab-icon">
-          <i class="fas fa-handshake"></i>
-        </div>
-        <h3>{{ t.collaborations.partnerships }}</h3>
-        <p>{{ t.collaborations.partnerships_text }}</p>
-        <a href="#contact" class="btn">{{ t.collaborations.cta }}</a>
+        <div class="collab-icon"><i class="fas fa-handshake"></i></div>
+        <h3>Research Partnerships</h3>
+        <p>I actively seek research collaborations in convergent ICT, 5G/6G, IoT, and AI/ML applications. Currently partnering with institutions in Brazil and internationally.</p>
+        <a href="#contact" class="btn">Contact Me</a>
       </div>
       <div class="collab-card">
-        <div class="collab-icon">
-          <i class="fas fa-user-graduate"></i>
-        </div>
-        <h3>{{ t.collaborations.supervision }}</h3>
-        <p>{{ t.collaborations.supervision_text }}</p>
-        <a href="#contact" class="btn">{{ t.collaborations.cta }}</a>
+        <div class="collab-icon"><i class="fas fa-user-graduate"></i></div>
+        <h3>Student Supervision</h3>
+        <p>Seeking motivated PhD and MSc students interested in software engineering, distributed systems, and future internet architectures.</p>
+        <a href="#contact" class="btn">Contact Me</a>
       </div>
       <div class="collab-card">
-        <div class="collab-icon">
-          <i class="fas fa-microphone-alt"></i>
-        </div>
-        <h3>{{ t.collaborations.talks }}</h3>
-        <p>{{ t.collaborations.talks_text }}</p>
-        <a href="#contact" class="btn">{{ t.collaborations.cta }}</a>
+        <div class="collab-icon"><i class="fas fa-microphone-alt"></i></div>
+        <h3>Invited Talks</h3>
+        <p>Available for keynotes, panel discussions, and workshops on technology trends, digital transformation, and future ICT.</p>
+        <a href="#contact" class="btn">Contact Me</a>
       </div>
     </div>
   </div>
@@ -132,66 +220,52 @@ lang: en
 <section class="section section-alt" id="contact">
   <div class="container">
     <div class="section-header">
-      <h2>{{ t.contact.title }}</h2>
+      <h2>Contact</h2>
     </div>
     <div class="contact-grid">
       <div class="contact-info">
-        <h3>{{ t.contact.social_title }}</h3>
-        
+        <h3>Connect</h3>
         <div class="contact-item">
-          <strong>{{ t.contact.email }}</strong>
-          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          <strong>Email</strong>
+          <a href="mailto:A.M.Alberti@leeds.ac.uk">A.M.Alberti@leeds.ac.uk</a>
         </div>
-        
         <div class="contact-item">
-          <strong>{{ t.contact.office }}</strong>
+          <strong>Office</strong>
           School of Computer Science<br>
-          University of Leeds
-        </div>
-        
-        <div class="contact-item">
-          <strong>{{ t.contact.address }}</strong>
+          University of Leeds<br>
           Leeds, United Kingdom
         </div>
-        
+        <div class="contact-item">
+          <strong>ORCID</strong>
+          <a href="https://orcid.org/0000-0002-0947-8575" target="_blank">0000-0002-0947-8575</a>
+        </div>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://scholar.google.com/citations?user={{ site.social.google_scholar }}" target="_blank" title="Google Scholar">
-            <i class="fas fa-graduation-cap"></i>
-          </a>
-          <a href="https://www.researchgate.net/profile/{{ site.social.researchgate }}" target="_blank" title="ResearchGate">
-            <i class="fab fa-researchgate"></i>
-          </a>
-          <a href="https://orcid.org/{{ site.social.orcid }}" target="_blank" title="ORCID">
-            <i class="fab fa-orcid"></i>
-          </a>
-          <a href="https://github.com/{{ site.social.github }}" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
+          <a href="https://www.linkedin.com/in/antonio-marcos-alberti-31643a1b/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://scholar.google.com/citations?user=2L_IXAIAAAAJ" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://www.researchgate.net/profile/Antonio-Alberti-2" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+          <a href="https://orcid.org/0000-0002-0947-8575" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+          <a href="https://github.com/antonioalberti" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
-      
       <div class="contact-form">
-        <form action="https://formspree.io/f/{{ site.email }}" method="POST">
+        <form action="https://formspree.io/f/A.M.Alberti@leeds.ac.uk" method="POST">
           <div class="form-group">
-            <label for="name">{{ t.contact.form_name }}</label>
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
           </div>
           <div class="form-group">
-            <label for="email">{{ t.contact.form_email }}</label>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
           </div>
           <div class="form-group">
-            <label for="subject">{{ t.contact.form_subject }}</label>
+            <label for="subject">Subject</label>
             <input type="text" id="subject" name="subject" required>
           </div>
           <div class="form-group">
-            <label for="message">{{ t.contact.form_message }}</label>
+            <label for="message">Message</label>
             <textarea id="message" name="message" required></textarea>
           </div>
-          <button type="submit">{{ t.contact.form_send }}</button>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </div>
