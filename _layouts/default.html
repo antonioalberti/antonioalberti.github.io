@@ -28,16 +28,48 @@
         <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
       </div>
       <nav class="site-nav">
-        <a href="#about">{% if page.lang == 'pt' %}Sobre{% elsif page.lang == 'es' %}Sobre Mí{% else %}About{% endif %}</a>
-        <a href="#experience">{% if page.lang == 'pt' %}Experiência{% elsif page.lang == 'es' %}Experiencia{% else %}Experience{% endif %}</a>
-        <a href="#research">{% if page.lang == 'pt' %}Pesquisa{% elsif page.lang == 'es' %}Investigación{% else %}Research{% endif %}</a>
-        <a href="#collaborations">{% if page.lang == 'pt' %}Colaborações{% elsif page.lang == 'es' %}Colaboraciones{% else %}Collaborations{% endif %}</a>
-        <a href="#contact">{% if page.lang == 'pt' %}Contato{% elsif page.lang == 'es' %}Contacto{% else %}Contact{% endif %}</a>
+        <a href="#about">
+          {% if page.lang == 'pt' %}Sobre
+          {% elsif page.lang == 'es' %}Sobre Mí
+          {% elsif page.lang == 'zh' %}关于我
+          {% elsif page.lang == 'hi' %}मेरे बारे में
+          {% else %}About{% endif %}
+        </a>
+        <a href="#experience">
+          {% if page.lang == 'pt' %}Experiência
+          {% elsif page.lang == 'es' %}Experiencia
+          {% elsif page.lang == 'zh' %}经历
+          {% elsif page.lang == 'hi' %}अनुभव
+          {% else %}Experience{% endif %}
+        </a>
+        <a href="#research">
+          {% if page.lang == 'pt' %}Pesquisa
+          {% elsif page.lang == 'es' %}Investigación
+          {% elsif page.lang == 'zh' %}研究
+          {% elsif page.lang == 'hi' %}अनुसंधान
+          {% else %}Research{% endif %}
+        </a>
+        <a href="#collaborations">
+          {% if page.lang == 'pt' %}Colaborações
+          {% elsif page.lang == 'es' %}Colaboraciones
+          {% elsif page.lang == 'zh' %}合作
+          {% elsif page.lang == 'hi' %}सहयोग
+          {% else %}Collaborations{% endif %}
+        </a>
+        <a href="#contact">
+          {% if page.lang == 'pt' %}Contato
+          {% elsif page.lang == 'es' %}Contacto
+          {% elsif page.lang == 'zh' %}联系
+          {% elsif page.lang == 'hi' %}संपर्क
+          {% else %}Contact{% endif %}
+        </a>
         
         <div class="lang-switcher">
           <a href="{{ '/' | relative_url }}" {% if page.lang == 'en' %}class="active"{% endif %}>EN</a>
           <a href="{{ '/pt/' | relative_url }}" {% if page.lang == 'pt' %}class="active"{% endif %}>PT</a>
           <a href="{{ '/es/' | relative_url }}" {% if page.lang == 'es' %}class="active"{% endif %}>ES</a>
+          <a href="{{ '/zh/' | relative_url }}" {% if page.lang == 'zh' %}class="active"{% endif %}>中文</a>
+          <a href="{{ '/hi/' | relative_url }}" {% if page.lang == 'hi' %}class="active"{% endif %}>हिंदी</a>
         </div>
       </nav>
     </div>
